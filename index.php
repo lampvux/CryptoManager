@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Crypto Management
-Plugin URI: http://nguyendangdungha.com
+Plugin URI: http://nddh-demo.info/wordpress/
 Description: Hello
 Version: 1.0
 Author: Mr. Vũ Tùng Lâm
