@@ -1,6 +1,25 @@
-# README #
+# README FILE#
 
-wordpress plugin must install on wordpress to run
+# PLUGIN WORDPRESS QUẢN LÝ VÍ TIỀN ONLINE #
 
-### What is this repository for? ###
+# Directory tree #
+├── index.php
+└── include
+|    └── template files
+└── cry_assets
+    └── css
+    └── fonts
+    └── js
+
+# API SỬ DỤNG #
+1.GET CONTENT JSON TỪ BLOCKCHAIN.INFO/ADDRESS/ ĐỂ GET TRANSACTIONS INFO
+  Hỗ trợ get 50 transfers /1 lần với từng offset - > dễ dùng ajax để insert vào DB hơn
+  https://blockchain.info/address/" . $address . "?format=json&offset=0"
+2.GET CONTENT JSON TỪ https://api.coinbase.com/v2/exchange-rates?currency=BTC  ĐỂ LẤY TỈ LỆ ĐỔI --- FREE REQUEST
+CÓ THỂ SỬ DỤNG https://developers.coinbase.com/api/v2#prices ĐỂ LẤY TỈ LỆ ĐỔI CHI TIẾT -- FREE REQUEST
+3.PIECHART % BÉ : https://github.com/rendro/easy-pie-chart
+4.PIECHART LỚN : http://www.chartjs.org/  HOẶC https://developers.google.com/chart/interactive/docs/gallery/piechart#example
+5.AREA CHART https://jsfiddle.net/api/post/library/pure/
+6.TABLES : DATATABLE ? 
+### TIẾN HÀNH :   ###
 
