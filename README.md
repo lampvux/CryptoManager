@@ -5,11 +5,11 @@
 # Directory tree #
 ├── index.php <br />
 └── include <br />
-|    └── template files <br />
+| ---   └── template files <br />
 └── cry_assets <br />
-    └── css <br />
-    └── fonts <br />
-    └── js <br />
+---    └── css <br />
+---    └── fonts <br />
+---    └── js <br />
 
 # API SỬ DỤNG #
 1.GET CONTENT JSON TỪ BLOCKCHAIN.INFO/ADDRESS/ ĐỂ GET TRANSACTIONS INFO <br />
