@@ -1,9 +1,19 @@
+<<<<<<< HEAD
 <?php
 error_reporting(E_ALL);
+=======
+
+<?php
+$addressClient =  Createrequest('xrp');
+$address = ReturnAddressval($addressClient,'rXzxK7wpKLZ99qwXNiy5nFQUhYxFZq3Rd');
+print_r($address);
+
+>>>>>>> 7f4a59f98af474c88b93f068a3fa8b661205c76d
 ?>
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 <title>Crypto Management</title>
 <link rel="stylesheet" href="<?=plugins_url('CryptoManagement/cry_assets/css/bootstrap.min.css')?>">
 <link rel="stylesheet" href="<?=plugins_url('CryptoManagement/cry_assets/css/bootstrap-theme.min.css')?>">
@@ -132,6 +142,45 @@ error_reporting(E_ALL);
 <script src="<?=plugins_url('CryptoManagement/cry_assets/js/jquery.dataTables.min.js')?>"></script>
 <script src="<?=plugins_url('CryptoManagement/cry_assets/js/dataTables.bootstrap.min.js')?>"></script>
 <script src="<?=plugins_url('CryptoManagement/cry_assets/js/main.js')?>"></script>
+=======
+	<title>Crypto Management</title>
+	<link rel="stylesheet" href="<?=plugins_url('CryptoManagement/cry_assets/css/bootstrap.min.css')?>">
+	<link rel="stylesheet" href="<?=plugins_url('CryptoManagement/cry_assets/css/bootstrap-theme.min.css')?>">
+	<link rel="stylesheet" href="<?=plugins_url('CryptoManagement/cry_assets/css/jquery-ui.css' )?>">
+	<link rel="stylesheet" href="<?=plugins_url('CryptoManagement/cry_assets/css/style.css')?>">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#" title="logout">Logout</a></li>
+		</ul>
+	</nav>
+	<div class="container th-container">
+		<p>Welcome Abc</p>
+		<h3>Bussiness Chart</h3>
+		<div style="width: 50%; float: left;">
+			<div id="big-piechart"></div>
+		</div>
+		<div style="width: 48%; float: right;">
+			<span class="chart" data-percent="30">
+				<span class="percent"></span>
+			</span>
+			<span class="chart2" data-percent="44">
+				<span class="percent"></span>
+			</span>
+			<span class="chart3" data-percent="64">
+				<span class="percent"></span>
+			</span>
+		</div>
+	</div>
+		
+	<script src="<?=plugins_url('CryptoManagement/cry_assets/js/jquery.min.js')?>"></script>
+	<script src="<?=plugins_url('CryptoManagement/cry_assets/js/jquery-ui.min.js')?>"></script>
+	<script src="<?=plugins_url('CryptoManagement/cry_assets/js/bootstrap.min.js')?>"></script>
+	<script src="<?=plugins_url('CryptoManagement/cry_assets/js/easypiechart.js')?>"></script>
+	<script src="<?=plugins_url('CryptoManagement/cry_assets/js/piechartloader.js')?>"></script>
+	<script src="<?=plugins_url('CryptoManagement/cry_assets/js/main.js')?>"></script>
+>>>>>>> 7f4a59f98af474c88b93f068a3fa8b661205c76d
 </body>
 </html>
 
