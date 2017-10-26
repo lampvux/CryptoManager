@@ -1,0 +1,39 @@
+[26-10-2017 06:51:06] BlockCypher\Core\BlockCypherHttpConnection: INFO	: GET https://api.blockcypher.com/v1/btc/main/wallets/alice/addresses?token=c0afcccdde5081d6429de37d16166ead
+[26-10-2017 06:51:07] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: GET /v1/btc/main/wallets/alice/addresses?token=c0afcccdde5081d6429de37d16166ead HTTP/1.1, Host: api.blockcypher.com, Accept: */*, Content-Type: application/json, User-Agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.1.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.2k;curl=7.55.0), , 
+[26-10-2017 06:51:07] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[26-10-2017 06:51:07] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 429
+[26-10-2017 06:51:07] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/1.1 429 Too Many Requests, Server: nginx/1.13.4, Date: Thu, 26 Oct 2017 04:51:08 GMT, Content-Type: text/plain; charset=utf-8, Content-Length: 126, Connection: keep-alive, X-Content-Type-Options: nosniff, X-Ratelimit-Remaining: -2, , 
+[26-10-2017 06:51:07] BlockCypher\Core\BlockCypherHttpConnection: ERROR	: Got Http response code 429 when accessing https://api.blockcypher.com/v1/btc/main/wallets/alice/addresses?token=c0afcccdde5081d6429de37d16166ead. {"error": "API calls limits have been reached. To extend your limits please upgrade your plan on BlockCypher accounts page."}
+
+[26-10-2017 06:51:07] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: 
+
+================================================================================================================================
+
+[26-10-2017 06:51:56] BlockCypher\Core\BlockCypherHttpConnection: INFO	: GET https://api.blockcypher.com/v1/btc/main/wallets/alice/addresses?token=c0afcccdde5081d6429de37d16166ead
+[26-10-2017 06:51:57] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: GET /v1/btc/main/wallets/alice/addresses?token=c0afcccdde5081d6429de37d16166ead HTTP/1.1, Host: api.blockcypher.com, Accept: */*, Content-Type: application/json, User-Agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.1.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.2k;curl=7.55.0), , 
+[26-10-2017 06:51:57] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[26-10-2017 06:51:57] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 429
+[26-10-2017 06:51:57] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/1.1 429 Too Many Requests, Server: nginx/1.13.4, Date: Thu, 26 Oct 2017 04:51:58 GMT, Content-Type: text/plain; charset=utf-8, Content-Length: 126, Connection: keep-alive, X-Content-Type-Options: nosniff, X-Ratelimit-Remaining: -2, , 
+[26-10-2017 06:51:57] BlockCypher\Core\BlockCypherHttpConnection: ERROR	: Got Http response code 429 when accessing https://api.blockcypher.com/v1/btc/main/wallets/alice/addresses?token=c0afcccdde5081d6429de37d16166ead. {"error": "API calls limits have been reached. To extend your limits please upgrade your plan on BlockCypher accounts page."}
+
+[26-10-2017 06:51:57] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: 
+
+================================================================================================================================
+
+[26-10-2017 06:52:35] BlockCypher\Core\BlockCypherHttpConnection: INFO	: GET https://api.blockcypher.com/v1/btc/main/wallets/1BoatSLRHtKNngkdXEeobR76b53LETtpyT/addresses?token=c0afcccdde5081d6429de37d16166ead
+[26-10-2017 06:52:36] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Request Headers 	: GET /v1/btc/main/wallets/1BoatSLRHtKNngkdXEeobR76b53LETtpyT/addresses?token=c0afcccdde5081d6429de37d16166ead HTTP/1.1, Host: api.blockcypher.com, Accept: */*, Content-Type: application/json, User-Agent: BlockCypherSDK/BlockCypher-PHP-SDK 1.5.0 (lang=PHP;v=7.1.9;bit=32;os=Windows_NT_6.1;machine=i586;openssl=1.0.2k;curl=7.55.0), , 
+[26-10-2017 06:52:36] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[26-10-2017 06:52:36] BlockCypher\Core\BlockCypherHttpConnection: INFO	: Response Status 	: 429
+[26-10-2017 06:52:36] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: Response Headers	: HTTP/1.1 429 Too Many Requests, Server: nginx/1.13.4, Date: Thu, 26 Oct 2017 04:52:37 GMT, Content-Type: text/plain; charset=utf-8, Content-Length: 126, Connection: keep-alive, X-Content-Type-Options: nosniff, X-Ratelimit-Remaining: -3, , 
+[26-10-2017 06:52:36] BlockCypher\Core\BlockCypherHttpConnection: ERROR	: Got Http response code 429 when accessing https://api.blockcypher.com/v1/btc/main/wallets/1BoatSLRHtKNngkdXEeobR76b53LETtpyT/addresses?token=c0afcccdde5081d6429de37d16166ead. {"error": "API calls limits have been reached. To extend your limits please upgrade your plan on BlockCypher accounts page."}
+
+[26-10-2017 06:52:36] BlockCypher\Core\BlockCypherHttpConnection: DEBUG	: 
+
+================================================================================================================================
+
