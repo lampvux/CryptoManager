@@ -102,6 +102,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-$(function(){
-	$('#myTable').DataTable();
-});

@@ -192,7 +192,7 @@ function sm_db_install() {
 
     $sql = "CREATE TABLE $table_name (
         id  INT NOT NULL AUTO_INCREMENT,
-        date_create  DATETIME NOT NULL ,
+        date_create  TIMESTAMP NOT NULL ,
         wallet_name tinytext NOT NULL,
         address varchar(255) DEFAULT '' NOT NULL,
         uid INT NOT NULL,
@@ -256,13 +256,65 @@ function cry_prefix_uninstall(){
     $addressClient = new AddressClient($apiContext);
 	return $addressClient;
 }
-function ReturnAddressval($addressClient,$addresspublic){
-    $address = $addressClient->getBalance($addresspublic);
+function ReturnAddressval($currency,$addresspublic){
+    $address=null;
+    try{
+        $addressClient = Createrequest($currency);
+        $address = $addressClient->getBalance($addresspublic);
+    }catch(Exception $ex){
+
+    }    
 	//$addressBalance = $addressClient->getBalance('0x249a0B8A85da020D53Bec45a4764998FC796Ab78');
 	//echo "JSON Address: " . $address->getAddress() . "\n";
 	return $address;
 }
 
+
+// function add wallet
+function addwallet($name,$address,$currency){
+    $cuid = get_current_user_id();
+    if (ReturnAddressval($currency,$address)!=null){
+        global $wpdb;
+        $table = $wpdb->prefix."wallet";
+        // check if this wallet already added 
+        $sqlcheck = "SELECT COUNT(*) FROM  ".$table." WHERE uid = ".$cuid." AND address = '".$address."' ;";
+        $result = $wpdb->get_var($sqlcheck);
+
+        if (count($result)>0){
+            return 2;  
+        }
+        else {
+            // success in checking
+            $sql = "INSERT INTO ".$table." ( wallet_name , address, uid,currency) VALUES ('".$name."' , '".$address."' ,".$cuid.",'".$currency."' ) ;";
+            return $wpdb->query($sql);
+        }
+    }
+    else return 0;
+}
+// ajax get all wallet in table
+function getallwallet(){
+    $cuid = get_current_user_id();
+    global $wpdb;
+    $table = $wpdb->prefix."wallet";
+    $sql = "SELECT * FROM ".$table ;
+    $a =array();
+    $res =  $wpdb->get_results($sql);
+    foreach ($res as $key => $value) {
+        $a['data'][] = $value;
+    }
+    echo json_encode($a);
+    die();
+}
+add_action( 'wp_ajax_getallwallet', 'getallwallet' );
+// ajax function save note
+function save_note(){
+    
+    update_user_meta( get_current_user_id(), 'user_note', urlencode($_POST['user_note']));
+    $rel = urldecode(get_user_meta( get_current_user_id(), 'user_note', true ));
+    echo json_encode($rel);	
+	die();
+}
+add_action( 'wp_ajax_save_note', 'save_note' );
 
 
 ?>
