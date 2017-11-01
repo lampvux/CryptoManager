@@ -11,9 +11,10 @@
   display: inline-block;
   width: 110px;
   height: 110px;
-  margin-top: 50px;
+  margin-top: 8px;
   margin-bottom: 50px;
   text-align: center;
+  margin-left: 20%;
 }
 .chart canvas, .chart2 canvas, .chart3 canvas {
   position: absolute;
@@ -26,7 +27,7 @@
   z-index: 2;
 }
 .percent:after {
-  content: '%';
+  
   margin-left: 0.1em;
   font-size: .8em;
 }
@@ -52,7 +53,7 @@
 .th-small-pie-chart {
   background-color: #fff;
   padding: 0px 20px;
-  height: 210px;
+  display: none;
   margin-bottom: 20px;
 }
 .th-small-pie-chart div {
@@ -70,7 +71,7 @@
 }
 .th-text-note textarea {
   width: 100%;
-  height: 270px;
+  height: 150px;
 }
 .th-text-chart {
   text-align: center;
@@ -84,4 +85,36 @@
   border: 1px solid black;
   background: #fff;
   padding: 8px 20px;
+}
+.th-btn-update {
+  margin-bottom: 30px;
+  float: right;
+  width: 100%;
+}
+.th-btn-update input {
+  float: right;
+}
+#firstwallet{
+  margin-top: -28px;
+  display: block;
+  color: black;
+  font-size: 12px;
+  width: 100%;
+ 
+}
+#secondwallet{
+  margin-top: -28px;
+  display: block;
+  color: black;
+  font-size: 12px;
+  width: 100%;
+  
+}
+#thirdwallet{
+  margin-top: -28px;
+  display: block;
+  color: black;
+  font-size: 12px;
+  width: 100%;
+  
 }

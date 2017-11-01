@@ -106,33 +106,7 @@ class BlockCypherLoggingManager
      */
     private function log($message, $level = BlockCypherLoggingLevel::INFO)
     {
-        if ($this->isLoggingEnabled) {
-            $config = BlockCypherConfigManager::getInstance()->getConfigHashmap();
-
-            if (isset($config['mode'])) {
-                $configMode = $config['mode'];
-            } else {
-                // mode has not been configured by user
-                $configMode = null;
-            }
-
-            // Check if logging in live
-            if ($configMode == 'live') {
-                // Live should not have logging level above INFO.
-                if ($this->loggingLevel >= BlockCypherLoggingLevel::INFO) {
-                    // If it is at Debug Level, throw an warning in the log.
-                    if ($this->loggingLevel == BlockCypherLoggingLevel::DEBUG) {
-                        error_log("[" . date('d-m-Y h:i:s') . "] " . $this->loggerName . ": ERROR\t: Not allowed to keep 'Debug' level for Live Environments. Reduced to 'INFO'\n", 3, $this->loggerFile);
-                    }
-                    // Reducing it to info level
-                    $this->loggingLevel = BlockCypherLoggingLevel::INFO;
-                }
-            }
-
-            if ($level <= $this->loggingLevel) {
-                error_log("[" . date('d-m-Y h:i:s') . "] " . $this->loggerName . ": $message\n", 3, $this->loggerFile);
-            }
-        }
+       
     }
 
     /**
