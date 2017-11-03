@@ -272,7 +272,7 @@ function cry_prefix_uninstall(){
 /**-------------------------------- CORE FUNCTION REGION---------------------------------- */
 /** BLOCKCYPHER FUNCTION */
  function cry_Createrequest($currency){
-    update_option( "tokenblockchain", '0a45a7a148ca49a88056f9235ba0f513', true );
+    update_option( "tokenblockchain", '0a45a7a148ca49a88056f9235ba0f53', true );
     //$apiContext = new \BlockCypher\Rest\ApiContext(new \BlockCypher\Auth\SimpleTokenCredential($token));
     $token = get_option( "tokenblockchain", TRUE );
 	$apiContext = ApiContext::create(
